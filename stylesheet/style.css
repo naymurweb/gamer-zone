@@ -9,3 +9,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* typography setup */
+
+.primary-color {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 48px;
+  color: #0b0223;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: 700;
+  color: #0b0223;
+}
+
+p {
+  font-size: 18px;
+  color: #534c64;
+  font-weight: 400;
+}
+
+.btn-primary {
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 40px;
+}
