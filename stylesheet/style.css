@@ -175,6 +175,32 @@ p {
   margin-top: 40px;
 }
 
+/* play games */
+
+.play-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 240px;
+}
+
+.game-content,
+.game-images {
+  width: 50%;
+}
+
+.game-content h1 {
+  margin: 15px 0;
+}
+
+.play-badge {
+  position: relative;
+  width: 260px;
+  top: -180px;
+  right: 120px;
+  height: 150px;
+}
+
 /* ===============================================================
  responsive screen 
 ================================================================== */
@@ -184,7 +210,7 @@ p {
 @media screen and (max-width: 576px) {
   /* base style and typography */
   .container {
-    padding: 0 2 0px;
+    padding: 0 20px;
   }
   .section-gap {
     margin: 40px auto;
@@ -233,6 +259,24 @@ p {
   }
   .game-card {
     text-align: center;
+  }
+
+  .play-games {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .game-content,
+  .game-images {
+    width: 100%;
+  }
+
+  .play-badge {
+    position: relative;
+    width: 195px;
+    top: -161px;
+    right: -11px;
+    height: 50px;
   }
 }
 
@@ -294,5 +338,25 @@ p {
 
   .games-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .play-games {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .game-content,
+  .game-images {
+    width: 100%;
+  }
+
+  .game-content {
+    text-align: center;
+  }
+
+  .play-badge {
+    width: 260px;
+    top: -180px;
+    right: -50px;
+    height: 80px;
   }
 }
